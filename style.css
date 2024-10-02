@@ -1,0 +1,24 @@
+*{
+    font-family: "Poppins";
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: inline-block;
+    margin: 40%;
+    width: 50vw;
+    height: 40vh;
+    background-color: red;
+    text-align: center;
+    align-content: center;
+}
+.textDiatasJam{
+    font-weight: 50%;
+    font-size: 30px;
+}
+.jam{
+    font-size: 40px;
+    color: #ffffff;
+}
+
