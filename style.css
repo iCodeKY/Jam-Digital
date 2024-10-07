@@ -1,24 +1,60 @@
 *{
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
 }
 
 .container{
-    display: inline-block;
-    margin: 40%;
-    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80vw;
     height: 40vh;
-    background-color: red;
+    background: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);  
     text-align: center;
-    align-content: center;
-}
-.textDiatasJam{
-    font-weight: 50%;
-    font-size: 30px;
-}
-.jam{
-    font-size: 40px;
-    color: #ffffff;
 }
 
+.textDiatasJam{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.jam{
+    font-size: 60px; 
+    font-weight: bold;
+    color: #00ffcc; 
+    letter-spacing: 0.1em; 
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc; 
+}
+
+ 
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .jam {
+        font-size: 40px;
+    }
+
+    .textDiatasJam {
+        font-size: 20px;
+    }
+}
